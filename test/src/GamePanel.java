@@ -5,7 +5,7 @@ import java.awt.*;
 
 public class GamePanel extends JFrame
 {
-    JLabel title;
+    JLabel title, subtitle;
     public void LaunchGame()
     {
         //界面初始设置
@@ -20,7 +20,8 @@ public class GamePanel extends JFrame
         int width = getWidth();
         int height = getHeight();
 
-
+        setForeground(Color.green);
+        //字体设置
         title = new JLabel("POLYTOPIA", SwingConstants.CENTER);
         title.setFont(new Font("仿宋", Font.BOLD, 52));
         title.setForeground(Color.BLACK);
